@@ -19,7 +19,6 @@ public class Recursion { //REKURENCJA
         }
     }
 
-
     public boolean findItercion (int[] values, int valueToSearch){
         for(int el: values) {
             if (el == valueToSearch) {
@@ -52,6 +51,15 @@ public class Recursion { //REKURENCJA
         if (value == 0 || value == 1) return value;
         return value * factorial(value - 1);
     }
+
+
+    public int power (int value, int power){
+        if (power == 1) return value;
+        return value*power(value,power-1);
+    }
+
+
+
 
 
 }
